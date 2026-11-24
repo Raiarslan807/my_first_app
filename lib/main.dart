@@ -1,24 +1,24 @@
 
 import 'package:flutter/material.dart';
-import 'package:my_first_app/screens/login.dart';
+import 'signin.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const UniLibrary());
 }
 
-class MyApp extends StatelessWidget {
+class UniLibrary extends StatelessWidget {
+  const UniLibrary({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Log In',
-
+      title: 'UniLibrary - YOUR ROLL NO',
       theme: ThemeData(
-        primarySwatch: Colors.orange,
+        primarySwatch: Colors.teal,
         useMaterial3: false,
       ),
-
-      home: LogIn(),
+      home: const SignIn(),
     );
   }
 }
